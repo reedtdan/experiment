@@ -1,0 +1,11 @@
+#!/usr/bin/osascript
+
+on run argv
+	set code_str to item 1 of argv
+	set code_num to code_str as integer
+    tell application "TextEdit"
+		activate
+		tell application "System Events" to key code code_num
+		tell application "System Events" to key code 37
+	end tell
+end run
