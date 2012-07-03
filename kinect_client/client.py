@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import socket
+import os
 import time
 
 server_name = "localhost" 
@@ -24,6 +25,12 @@ def main():
 	while 1:
 		msg = client_sock.recv(512)
 		print 'Received from kinect: %s' % msg
+		if msg == 'Click':
+			os.popen('./send_keystroke.osa 20');
+			print 'Sending 20'
+		elif msg == 'Wave':
+			os.popen('./send_keystroke.osa 19');
+			print 'Sending 19'
 
 
 if __name__ == "__main__":

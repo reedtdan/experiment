@@ -11,7 +11,8 @@ PVector currentHand;
 PVector previousHand;
 
 void setup() {
-  size(640, 480);
+  //size(640, 480);
+  size(400,350 * 2);
   gesture_number = 0;
   server = new Server(this, 5000);
   println("Starting a server on port 5000");
@@ -19,7 +20,7 @@ void setup() {
   kinect.setMirror(true);
   
   kinect.enableDepth();
-  
+  kinect.enableRGB();
   kinect.enableGesture();
   kinect.enableHands();
   
@@ -35,6 +36,7 @@ void setup() {
 void draw() {
   kinect.update();
   image(kinect.depthImage(),0,0);
+  image(kinect.rgbImage(), 0, 350);
   
   for (int i = 1; i < handPositions.size(); i++) {
     currentHand = handPositions.get(i);
@@ -63,9 +65,8 @@ void onDestroyHands(int handId, float time) {
 void onRecognizeGesture(String strGesture, PVector idPosistion, PVector endPosistion)
 {
   gesture_number++;
-  String msg = String.format("Gesture \"%s\" detected, number %d.", strGesture, gesture_number);
-  server.write(msg);
-  println(msg);
+  server.write(strGesture);
+  println(strGesture);
 }
 
 // The serverEvent function is called whenever a new client connects.
