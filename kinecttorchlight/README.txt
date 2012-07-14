@@ -10,4 +10,5 @@ In order to run this demonstration,
 3- Make sure that Torchlight is the active application, so it will receive the keystrokes.
 
 YouTube Demonstrations
-(Will Add)
+Demonstration 1: http://www.youtube.com/watch?v=_o50TFi3I5Q&feature=plcp
+Demonstration 2: http://www.youtube.com/watch?v=CDBEijU9HCo&feature=plcp
