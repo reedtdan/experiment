@@ -1,5 +1,6 @@
 In order to run this demonstration successfully, you must have
 
+This works on a mac only. It requires Applescript, so it will not work on PC.
 Simple Open NI: http://code.google.com/p/simple-openni/
 Processing: http://processing.org/
 Torchlight from Steam
@@ -10,5 +11,6 @@ In order to run this demonstration,
 3- Make sure that Torchlight is the active application, so it will receive the keystrokes.
 
 YouTube Demonstrations
+These demonstrate using the click and wave 
 Demonstration 1: http://www.youtube.com/watch?v=_o50TFi3I5Q&feature=plcp
 Demonstration 2: http://www.youtube.com/watch?v=CDBEijU9HCo&feature=plcp
