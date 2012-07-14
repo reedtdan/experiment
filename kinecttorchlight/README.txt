@@ -7,7 +7,7 @@ Torchlight from Steam
 In order to run this demonstration, 
 1- Run "kinectserverprocess.pde" in processing.
 2- Invoke "./kinectclient.py" from terminal
-3- Choose which application you want to be active - this one will receive the keystrokes.
+3- Make sure that Torchlight is the active application, so it will receive the keystrokes.
 
 YouTube Demonstrations
 (Will Add)
