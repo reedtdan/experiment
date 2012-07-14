@@ -1,0 +1,7 @@
+#!/usr/bin/osascript
+
+on run argv
+	set code_str to item 1 of argv
+	set code_num to code_str as integer
+	tell application "System Events" to key code code_num
+end run

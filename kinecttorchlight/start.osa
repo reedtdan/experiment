@@ -1,0 +1,6 @@
+#!/usr/bin/osascript
+
+tell application "TorchlightMac"
+	activate
+	set bounds of window 1 to { 301, 1, 1280, 700 }
+end tell
