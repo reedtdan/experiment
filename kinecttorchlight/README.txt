@@ -1,3 +1,5 @@
+This is a hack that allows you to use gestural input from kinect and send information to any application on a mac. In this demonstration, we show that we can send information to a video game - in this case, Torchlight.
+
 In order to run this demonstration successfully, you must have
 
 This works on a mac only. It requires Applescript, so it will not work on PC.
